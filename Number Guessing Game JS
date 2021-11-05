@@ -1,0 +1,27 @@
+let humanScore = 0;
+let computerScore = 0;
+let currentRoundNumber = 1;
+
+// Write your code below:
+const generateTarget = (x) => {
+  return Math.floor(Math.random(x < 10))
+}
+const compareGuesses = (human, computer, target) => {
+  if (Math.abs(human === target)) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+const updateScore = () => {
+  humanScore + 1
+ computerScore + 1
+}
+
+const advanceRound = () => {
+  let advanceRound = currentRoundNumber + 1
+}
+
+console.log(computerScore)
